@@ -17,7 +17,7 @@ public class H2R2DbcConfiguration extends AbstractR2dbcConfiguration {
    @Override @Bean public ConnectionFactory connectionFactory() {
       var connectionFactoryBuilder = org.springframework.boot.r2dbc.ConnectionFactoryBuilder
             .withUrl( "r2dbc:h2:mem://./testdb;DB_CLOSE_DELAY=-1;" )
-            .password( "sa" )
+            .username( "sa" )
             .password( "" )
             .build();
       return connectionFactoryBuilder;
