@@ -1,0 +1,61 @@
+### Add Avatar
+POST http://localhost:9091/v1/movie-info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Avatar",
+  "year": 2009,
+  "releaseDate": "2009-12-18"
+}
+
+### Add Avatar 2
+POST http://localhost:9091/v1/movie-info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Avatar 2",
+  "year": 2022,
+  "releaseDate": "2022-12-17"
+}
+
+### Update Avatar 2
+PUT http://localhost:9091/v1/movie-info/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Avatar 2",
+  "year": 2022,
+  "releaseDate": "2022-12-10"
+}
+
+### Update with wrong ID
+PUT http://localhost:9091/v1/movie-info/200
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Avatar 2",
+  "year": 2022,
+  "releaseDate": "2022-12-10"
+}
+
+### Delete Avatar 2
+DELETE http://localhost:9091/v1/movie-info/2
+
+### Find all movie infos
+GET http://localhost:9091/v1/movie-info
+Accept: application/json
+
+### Bad Reqest
+POST http://localhost:9091/v1/movie-info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "",
+  "year": -2009,
+  "releaseDate": "2009-12-18"
+}

@@ -1,0 +1,11 @@
+### Retrieve Flux
+GET http://localhost:9091/flux
+Accept: application/json
+
+### Retrieve Mono
+GET http://localhost:9091/mono
+Accept: application/json
+
+### Retrieve Stream
+GET http://localhost:9091/stream
+Accept: application/x-ndjson

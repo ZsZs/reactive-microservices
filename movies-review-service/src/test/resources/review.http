@@ -1,0 +1,28 @@
+### GET Hello World
+GET http://localhost:9092/v1/reviews/helloworld
+
+### Add movie review
+POST http://localhost:9092/v1/reviews
+Accept: application/json
+Content-Type: application/json
+
+{
+  "movieInfoId": 1,
+  "comment": "I really loved this movie",
+  "rating": 9.0
+}
+
+### Update movie review
+PUT http://localhost:9092/v1/reviews/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "movieInfoId": 1,
+  "comment": "Not so good movie",
+  "rating": 5.5
+}
+
+### Find all reviews
+GET http://localhost:9092/v1/reviews
+Accept: application/json
